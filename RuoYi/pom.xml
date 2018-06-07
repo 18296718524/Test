@@ -55,6 +55,12 @@
             </exclusions> 
              -->
 		</dependency>
+		<!-- 使用注解处理器生成您自己的元数据 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
 
 		<!-- SpringBoot 测试 -->
 		<dependency>
