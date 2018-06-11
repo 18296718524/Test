@@ -56,7 +56,7 @@
                 	</a>
                    <ul class="nav nav-second-level collapse">
                         <li th:each="cmenu : ${menu.children}">
-                        	<a class="menuItem" th:text="${cmenu.menuName}" th:href="@{${cmenu.url}}">二级菜单</a>
+                        	<a class="menuItem" th:text="${cmenu.menuName}" th:href="@{${cmenu.url}}" th:target="${cmenu.openMode}">二级菜单</a>
                         </li>
                     </ul>
                 </li>

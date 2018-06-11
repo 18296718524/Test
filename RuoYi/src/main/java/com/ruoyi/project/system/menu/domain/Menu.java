@@ -28,6 +28,8 @@ public class Menu extends BaseEntity
     private String menuType;
     /** 菜单状态:0显示,1隐藏 */
     private int visible;
+    /** 菜单页面打开方式:本窗口_parent,新窗口_blank */
+    private String openMode;
     /** 权限字符串 */
     private String perms;
     /** 菜单图标 */
@@ -135,6 +137,10 @@ public class Menu extends BaseEntity
         this.icon = icon;
     }
 
+    public String getOpenMode() { return openMode; }
+
+    public void setOpenMode(String openMode) { this.openMode = openMode; }
+
     public List<Menu> getChildren()
     {
         return children;
@@ -150,7 +156,7 @@ public class Menu extends BaseEntity
     {
         return "Menu [menuId=" + menuId + ", menuName=" + menuName + ", parentName=" + parentName + ", parentId="
                 + parentId + ", orderNum=" + orderNum + ", url=" + url + ", menuType=" + menuType + ", visible="
-                + visible + ", perms=" + perms + ", icon=" + icon + ", children=" + children + "]";
+                + visible + ", perms=" + perms + ", icon=" + icon + ", children=" + children + ", openMode=" + openMode + "]";
     }
 
 }
