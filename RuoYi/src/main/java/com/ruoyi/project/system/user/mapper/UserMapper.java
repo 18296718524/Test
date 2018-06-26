@@ -10,7 +10,6 @@ import com.ruoyi.project.system.user.domain.User;
  */
 public interface UserMapper
 {
-
     /**
      * 根据条件分页查询用户对象
      * 

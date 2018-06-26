@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50722
 File Encoding         : 65001
 
-Date: 2018-06-11 15:34:24
+Date: 2018-06-26 09:54:01
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -163,7 +163,7 @@ CREATE TABLE `qrtz_scheduler_state` (
 -- ----------------------------
 -- Records of qrtz_scheduler_state
 -- ----------------------------
-INSERT INTO `qrtz_scheduler_state` VALUES ('RuoyiScheduler', 'yff-PC1528702165540', '1528702454367', '15000');
+INSERT INTO `qrtz_scheduler_state` VALUES ('RuoyiScheduler', 'yff-PC1529651371823', '1529651541947', '15000');
 
 -- ----------------------------
 -- Table structure for qrtz_simple_triggers
@@ -344,8 +344,8 @@ INSERT INTO `sys_dict_data` VALUES ('12', '1', '正常', '0', 'sys_job_status', 
 INSERT INTO `sys_dict_data` VALUES ('13', '2', '暂停', '1', 'sys_job_status', 'radio radio-danger radio-inline', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
 INSERT INTO `sys_dict_data` VALUES ('14', '1', '是', 'Y', 'sys_yes_no', 'radio radio-info radio-inline', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
 INSERT INTO `sys_dict_data` VALUES ('15', '2', '否', 'N', 'sys_yes_no', 'radio radio-danger radio-inline', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_dict_data` VALUES ('17', '1', '本窗口', '_parent', 'sys_menu_openmode', 'radio radio-info radio-inline', 'Y', '0', 'admin', '2018-06-08 14:53:41', 'admin', '2018-06-08 15:30:12', '');
-INSERT INTO `sys_dict_data` VALUES ('18', '2', '新窗口', '_blank', 'sys_menu_openmode', 'radio radio-info radio-inline', 'N', '0', 'admin', '2018-06-08 14:54:46', 'admin', '2018-06-08 15:29:04', '');
+INSERT INTO `sys_dict_data` VALUES ('17', '1', '本窗口', '0', 'sys_menu_openmode', 'radio radio-info radio-inline', 'Y', '0', 'admin', '2018-06-08 14:53:41', 'admin', '2018-06-15 15:23:59', '');
+INSERT INTO `sys_dict_data` VALUES ('18', '2', '新窗口', '1', 'sys_menu_openmode', 'radio radio-warning radio-inline', 'N', '0', 'admin', '2018-06-08 14:54:46', 'admin', '2018-06-15 15:24:17', '');
 
 -- ----------------------------
 -- Table structure for sys_dict_type
@@ -444,7 +444,7 @@ CREATE TABLE `sys_logininfor` (
   `msg` varchar(255) DEFAULT '' COMMENT '提示消息',
   `login_time` datetime DEFAULT NULL COMMENT '访问时间',
   PRIMARY KEY (`info_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=239 DEFAULT CHARSET=utf8 COMMENT='系统访问记录';
+) ENGINE=InnoDB AUTO_INCREMENT=250 DEFAULT CHARSET=utf8 COMMENT='系统访问记录';
 
 -- ----------------------------
 -- Records of sys_logininfor
@@ -588,6 +588,17 @@ INSERT INTO `sys_logininfor` VALUES ('235', 'admin', '127.0.0.1', 'XXXX内网IP'
 INSERT INTO `sys_logininfor` VALUES ('236', 'admin', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-11 13:42:19');
 INSERT INTO `sys_logininfor` VALUES ('237', 'admin', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-11 15:28:48');
 INSERT INTO `sys_logininfor` VALUES ('238', 'admin', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-11 15:29:36');
+INSERT INTO `sys_logininfor` VALUES ('239', 'admin', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-11 16:19:08');
+INSERT INTO `sys_logininfor` VALUES ('240', 'admin', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-11 17:25:13');
+INSERT INTO `sys_logininfor` VALUES ('241', 'admin', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-12 14:38:36');
+INSERT INTO `sys_logininfor` VALUES ('242', 'admin', '127.0.0.1', null, 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-13 17:51:36');
+INSERT INTO `sys_logininfor` VALUES ('243', 'admin', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-15 11:45:23');
+INSERT INTO `sys_logininfor` VALUES ('244', 'admin', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-15 15:22:57');
+INSERT INTO `sys_logininfor` VALUES ('245', 'admin', '127.0.0.1', null, 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-15 15:56:31');
+INSERT INTO `sys_logininfor` VALUES ('246', 'admin', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-15 16:34:34');
+INSERT INTO `sys_logininfor` VALUES ('247', 'admin', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-15 16:52:05');
+INSERT INTO `sys_logininfor` VALUES ('248', 'admin', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-19 09:39:06');
+INSERT INTO `sys_logininfor` VALUES ('249', 'admin', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2018-06-22 15:10:48');
 
 -- ----------------------------
 -- Table structure for sys_menu
@@ -608,91 +619,91 @@ CREATE TABLE `sys_menu` (
   `update_by` varchar(64) DEFAULT '' COMMENT '更新者',
   `update_time` datetime DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) DEFAULT '' COMMENT '备注',
-  `open_mode` varchar(64) DEFAULT '' COMMENT '菜单页面打开方式:本窗口_parent,新窗口_blank',
+  `open_mode` tinyint(1) DEFAULT '0' COMMENT '菜单页面打开方式:本窗口0,新窗口1',
   PRIMARY KEY (`menu_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1005 DEFAULT CHARSET=utf8 COMMENT='菜单权限表';
 
 -- ----------------------------
 -- Records of sys_menu
 -- ----------------------------
-INSERT INTO `sys_menu` VALUES ('1', '系统管理', '0', '1', '#', 'M', '0', '', 'fa fa-gear', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统管理目录', '_parent');
-INSERT INTO `sys_menu` VALUES ('2', '系统监控', '0', '2', '#', 'M', '0', '', 'fa fa-video-camera', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统监控目录', '_parent');
-INSERT INTO `sys_menu` VALUES ('3', '系统工具', '0', '3', '#', 'M', '0', '', 'fa fa-bars', 'admin', '2018-03-16 11:33:00', 'admin', '2018-06-06 10:01:10', '系统工具目录', '_parent');
-INSERT INTO `sys_menu` VALUES ('4', '用户管理', '1', '1', '/system/user', 'C', '0', 'system:user:view', '#', 'admin', '2018-03-16 11:33:00', 'admin', '2018-06-11 13:42:44', '用户管理菜单', '_blank');
-INSERT INTO `sys_menu` VALUES ('5', '角色管理', '1', '2', '/system/role', 'C', '0', 'system:role:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '角色管理菜单', '_parent');
-INSERT INTO `sys_menu` VALUES ('6', '菜单管理', '1', '3', '/system/menu', 'C', '0', 'system:menu:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '菜单管理菜单', '_parent');
-INSERT INTO `sys_menu` VALUES ('7', '部门管理', '1', '4', '/system/dept', 'C', '0', 'system:dept:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '部门管理菜单', '_parent');
-INSERT INTO `sys_menu` VALUES ('8', '岗位管理', '1', '5', '/system/post', 'C', '0', 'system:post:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '岗位管理菜单', '_parent');
-INSERT INTO `sys_menu` VALUES ('9', '字典管理', '1', '6', '/system/dict', 'C', '0', 'system:dict:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '字典管理菜单', '_parent');
-INSERT INTO `sys_menu` VALUES ('10', '参数设置', '1', '7', '/system/config', 'C', '0', 'system:config:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '参数设置菜单', '_parent');
-INSERT INTO `sys_menu` VALUES ('11', '操作日志', '2', '1', '/monitor/operlog', 'C', '0', 'monitor:operlog:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '操作日志菜单', '_parent');
-INSERT INTO `sys_menu` VALUES ('12', '登录日志', '2', '2', '/monitor/logininfor', 'C', '0', 'monitor:logininfor:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '登录日志菜单', '_parent');
-INSERT INTO `sys_menu` VALUES ('13', '在线用户', '2', '3', '/monitor/online', 'C', '0', 'monitor:online:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '在线用户菜单', '_parent');
-INSERT INTO `sys_menu` VALUES ('14', '定时任务', '2', '4', '/monitor/job', 'C', '0', 'monitor:job:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '定时任务菜单', '_parent');
-INSERT INTO `sys_menu` VALUES ('15', '数据监控', '2', '5', '/monitor/data', 'C', '0', 'monitor:data:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '数据监控菜单', '_parent');
-INSERT INTO `sys_menu` VALUES ('16', '表单构建', '3', '1', '/tool/build', 'C', '0', 'tool:build:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '表单构建菜单', '_parent');
-INSERT INTO `sys_menu` VALUES ('17', '代码生成', '3', '2', '/tool/gen', 'C', '0', 'tool:gen:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '代码生成菜单', '_parent');
-INSERT INTO `sys_menu` VALUES ('18', '用户查询', '4', '1', '#', 'F', '0', 'system:user:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('19', '用户新增', '4', '2', '#', 'F', '0', 'system:user:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('20', '用户修改', '4', '3', '#', 'F', '0', 'system:user:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('21', '用户删除', '4', '4', '#', 'F', '0', 'system:user:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('22', '用户保存', '4', '5', '#', 'F', '0', 'system:user:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('23', '批量删除', '4', '6', '#', 'F', '0', 'system:user:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('24', '重置密码', '4', '7', '#', 'F', '0', 'system:user:resetPwd', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('25', '角色查询', '5', '1', '#', 'F', '0', 'system:role:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('26', '角色新增', '5', '2', '#', 'F', '0', 'system:role:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('27', '角色修改', '5', '3', '#', 'F', '0', 'system:role:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('28', '角色删除', '5', '4', '#', 'F', '0', 'system:role:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('29', '角色保存', '5', '5', '#', 'F', '0', 'system:role:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('30', '批量删除', '5', '6', '#', 'F', '0', 'system:role:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('31', '菜单查询', '6', '1', '#', 'F', '0', 'system:menu:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('32', '菜单新增', '6', '2', '#', 'F', '0', 'system:menu:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('33', '菜单修改', '6', '3', '#', 'F', '0', 'system:menu:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('34', '菜单删除', '6', '4', '#', 'F', '0', 'system:menu:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('35', '菜单保存', '6', '5', '#', 'F', '0', 'system:menu:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('36', '部门查询', '7', '1', '#', 'F', '0', 'system:dept:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('37', '部门新增', '7', '2', '#', 'F', '0', 'system:dept:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('38', '部门修改', '7', '3', '#', 'F', '0', 'system:dept:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('39', '部门删除', '7', '4', '#', 'F', '0', 'system:dept:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('40', '部门保存', '7', '5', '#', 'F', '0', 'system:dept:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('41', '岗位查询', '8', '1', '#', 'F', '0', 'system:post:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('42', '岗位新增', '8', '2', '#', 'F', '0', 'system:post:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('43', '岗位修改', '8', '3', '#', 'F', '0', 'system:post:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('44', '岗位删除', '8', '4', '#', 'F', '0', 'system:post:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('45', '岗位保存', '8', '5', '#', 'F', '0', 'system:post:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('46', '批量删除', '8', '6', '#', 'F', '0', 'system:post:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('47', '字典查询', '9', '1', '#', 'F', '0', 'system:dict:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('48', '字典新增', '9', '2', '#', 'F', '0', 'system:dict:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('49', '字典修改', '9', '3', '#', 'F', '0', 'system:dict:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('50', '字典删除', '9', '4', '#', 'F', '0', 'system:dict:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('51', '字典保存', '9', '5', '#', 'F', '0', 'system:dict:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('52', '批量删除', '9', '6', '#', 'F', '0', 'system:dict:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('53', '参数查询', '10', '1', '#', 'F', '0', 'system:config:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('54', '参数新增', '10', '2', '#', 'F', '0', 'system:config:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('55', '参数修改', '10', '3', '#', 'F', '0', 'system:config:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('56', '参数删除', '10', '4', '#', 'F', '0', 'system:config:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('57', '参数保存', '10', '5', '#', 'F', '0', 'system:config:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('58', '批量删除', '10', '6', '#', 'F', '0', 'system:config:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('59', '操作查询', '11', '1', '#', 'F', '0', 'monitor:operlog:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('60', '批量删除', '11', '2', '#', 'F', '0', 'monitor:operlog:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('61', '详细信息', '11', '3', '#', 'F', '0', 'monitor:operlog:detail', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('62', '登录查询', '12', '1', '#', 'F', '0', 'monitor:logininfor:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('63', '批量删除', '12', '2', '#', 'F', '0', 'monitor:logininfor:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('64', '在线查询', '13', '1', '#', 'F', '0', 'monitor:online:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('65', '批量强退', '13', '2', '#', 'F', '0', 'monitor:online:batchForceLogout', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('66', '单条强退', '13', '3', '#', 'F', '0', 'monitor:online:forceLogout', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('67', '任务查询', '14', '1', '#', 'F', '0', 'monitor:job:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('68', '任务新增', '14', '2', '#', 'F', '0', 'monitor:job:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('69', '任务修改', '14', '3', '#', 'F', '0', 'monitor:job:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('70', '任务删除', '14', '4', '#', 'F', '0', 'monitor:job:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('71', '任务保存', '14', '5', '#', 'F', '0', 'monitor:job:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('72', '状态修改', '14', '6', '#', 'F', '0', 'monitor:job:changeStatus', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('73', '批量删除', '14', '7', '#', 'F', '0', 'monitor:job:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('74', '生成查询', '16', '1', '#', 'F', '0', 'tool:gen:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('75', '生成代码', '16', '2', '#', 'F', '0', 'tool:gen:code', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('1000', '百度一下', '3', '3', 'http://www.baidu.com', 'C', '0', 'tool:build:view', '', 'admin', '2018-05-30 17:56:02', 'admin', '2018-06-11 13:52:03', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('1001', '主页', '0', '0', '#', 'M', '0', '', 'fa fa-home', 'admin', '2018-06-05 14:03:02', 'admin', '2018-06-07 10:56:26', '', '_parent');
-INSERT INTO `sys_menu` VALUES ('1004', '了解我们', '1001', '1', '/system/main', 'C', '0', 'system:main:view', '', 'admin', '2018-06-05 15:20:26', 'admin', '2018-06-08 17:17:38', '', '_blank');
+INSERT INTO `sys_menu` VALUES ('1', '系统管理', '0', '1', '#', 'M', '0', '', 'fa fa-gear', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统管理目录', '0');
+INSERT INTO `sys_menu` VALUES ('2', '系统监控', '0', '2', '#', 'M', '0', '', 'fa fa-video-camera', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统监控目录', '0');
+INSERT INTO `sys_menu` VALUES ('3', '系统工具', '0', '3', '#', 'M', '0', '', 'fa fa-bars', 'admin', '2018-03-16 11:33:00', 'admin', '2018-06-06 10:01:10', '系统工具目录', '0');
+INSERT INTO `sys_menu` VALUES ('4', '用户管理', '1', '1', '/system/user', 'C', '0', 'system:user:view', '#', 'admin', '2018-03-16 11:33:00', 'admin', '2018-06-11 13:42:44', '用户管理菜单', '1');
+INSERT INTO `sys_menu` VALUES ('5', '角色管理', '1', '2', '/system/role', 'C', '0', 'system:role:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '角色管理菜单', '0');
+INSERT INTO `sys_menu` VALUES ('6', '菜单管理', '1', '3', '/system/menu', 'C', '0', 'system:menu:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '菜单管理菜单', '0');
+INSERT INTO `sys_menu` VALUES ('7', '部门管理', '1', '4', '/system/dept', 'C', '0', 'system:dept:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '部门管理菜单', '0');
+INSERT INTO `sys_menu` VALUES ('8', '岗位管理', '1', '5', '/system/post', 'C', '0', 'system:post:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '岗位管理菜单', '0');
+INSERT INTO `sys_menu` VALUES ('9', '字典管理', '1', '6', '/system/dict', 'C', '0', 'system:dict:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '字典管理菜单', '0');
+INSERT INTO `sys_menu` VALUES ('10', '参数设置', '1', '7', '/system/config', 'C', '0', 'system:config:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '参数设置菜单', '0');
+INSERT INTO `sys_menu` VALUES ('11', '操作日志', '2', '1', '/monitor/operlog', 'C', '0', 'monitor:operlog:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '操作日志菜单', '0');
+INSERT INTO `sys_menu` VALUES ('12', '登录日志', '2', '2', '/monitor/logininfor', 'C', '0', 'monitor:logininfor:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '登录日志菜单', '0');
+INSERT INTO `sys_menu` VALUES ('13', '在线用户', '2', '3', '/monitor/online', 'C', '0', 'monitor:online:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '在线用户菜单', '0');
+INSERT INTO `sys_menu` VALUES ('14', '定时任务', '2', '4', '/monitor/job', 'C', '0', 'monitor:job:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '定时任务菜单', '0');
+INSERT INTO `sys_menu` VALUES ('15', '数据监控', '2', '5', '/monitor/data', 'C', '0', 'monitor:data:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '数据监控菜单', '0');
+INSERT INTO `sys_menu` VALUES ('16', '表单构建', '3', '1', '/tool/build', 'C', '0', 'tool:build:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '表单构建菜单', '0');
+INSERT INTO `sys_menu` VALUES ('17', '代码生成', '3', '2', '/tool/gen', 'C', '0', 'tool:gen:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '代码生成菜单', '0');
+INSERT INTO `sys_menu` VALUES ('18', '用户查询', '4', '1', '#', 'F', '0', 'system:user:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('19', '用户新增', '4', '2', '#', 'F', '0', 'system:user:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('20', '用户修改', '4', '3', '#', 'F', '0', 'system:user:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('21', '用户删除', '4', '4', '#', 'F', '0', 'system:user:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('22', '用户保存', '4', '5', '#', 'F', '0', 'system:user:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('23', '批量删除', '4', '6', '#', 'F', '0', 'system:user:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('24', '重置密码', '4', '7', '#', 'F', '0', 'system:user:resetPwd', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('25', '角色查询', '5', '1', '#', 'F', '0', 'system:role:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('26', '角色新增', '5', '2', '#', 'F', '0', 'system:role:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('27', '角色修改', '5', '3', '#', 'F', '0', 'system:role:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('28', '角色删除', '5', '4', '#', 'F', '0', 'system:role:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('29', '角色保存', '5', '5', '#', 'F', '0', 'system:role:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('30', '批量删除', '5', '6', '#', 'F', '0', 'system:role:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('31', '菜单查询', '6', '1', '#', 'F', '0', 'system:menu:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('32', '菜单新增', '6', '2', '#', 'F', '0', 'system:menu:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('33', '菜单修改', '6', '3', '#', 'F', '0', 'system:menu:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('34', '菜单删除', '6', '4', '#', 'F', '0', 'system:menu:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('35', '菜单保存', '6', '5', '#', 'F', '0', 'system:menu:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('36', '部门查询', '7', '1', '#', 'F', '0', 'system:dept:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('37', '部门新增', '7', '2', '#', 'F', '0', 'system:dept:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('38', '部门修改', '7', '3', '#', 'F', '0', 'system:dept:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('39', '部门删除', '7', '4', '#', 'F', '0', 'system:dept:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('40', '部门保存', '7', '5', '#', 'F', '0', 'system:dept:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('41', '岗位查询', '8', '1', '#', 'F', '0', 'system:post:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('42', '岗位新增', '8', '2', '#', 'F', '0', 'system:post:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('43', '岗位修改', '8', '3', '#', 'F', '0', 'system:post:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('44', '岗位删除', '8', '4', '#', 'F', '0', 'system:post:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('45', '岗位保存', '8', '5', '#', 'F', '0', 'system:post:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('46', '批量删除', '8', '6', '#', 'F', '0', 'system:post:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('47', '字典查询', '9', '1', '#', 'F', '0', 'system:dict:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('48', '字典新增', '9', '2', '#', 'F', '0', 'system:dict:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('49', '字典修改', '9', '3', '#', 'F', '0', 'system:dict:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('50', '字典删除', '9', '4', '#', 'F', '0', 'system:dict:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('51', '字典保存', '9', '5', '#', 'F', '0', 'system:dict:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('52', '批量删除', '9', '6', '#', 'F', '0', 'system:dict:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('53', '参数查询', '10', '1', '#', 'F', '0', 'system:config:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('54', '参数新增', '10', '2', '#', 'F', '0', 'system:config:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('55', '参数修改', '10', '3', '#', 'F', '0', 'system:config:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('56', '参数删除', '10', '4', '#', 'F', '0', 'system:config:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('57', '参数保存', '10', '5', '#', 'F', '0', 'system:config:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('58', '批量删除', '10', '6', '#', 'F', '0', 'system:config:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('59', '操作查询', '11', '1', '#', 'F', '0', 'monitor:operlog:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('60', '批量删除', '11', '2', '#', 'F', '0', 'monitor:operlog:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('61', '详细信息', '11', '3', '#', 'F', '0', 'monitor:operlog:detail', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('62', '登录查询', '12', '1', '#', 'F', '0', 'monitor:logininfor:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('63', '批量删除', '12', '2', '#', 'F', '0', 'monitor:logininfor:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('64', '在线查询', '13', '1', '#', 'F', '0', 'monitor:online:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('65', '批量强退', '13', '2', '#', 'F', '0', 'monitor:online:batchForceLogout', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('66', '单条强退', '13', '3', '#', 'F', '0', 'monitor:online:forceLogout', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('67', '任务查询', '14', '1', '#', 'F', '0', 'monitor:job:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('68', '任务新增', '14', '2', '#', 'F', '0', 'monitor:job:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('69', '任务修改', '14', '3', '#', 'F', '0', 'monitor:job:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('70', '任务删除', '14', '4', '#', 'F', '0', 'monitor:job:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('71', '任务保存', '14', '5', '#', 'F', '0', 'monitor:job:save', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('72', '状态修改', '14', '6', '#', 'F', '0', 'monitor:job:changeStatus', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('73', '批量删除', '14', '7', '#', 'F', '0', 'monitor:job:batchRemove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('74', '生成查询', '16', '1', '#', 'F', '0', 'tool:gen:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('75', '生成代码', '16', '2', '#', 'F', '0', 'tool:gen:code', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '', '0');
+INSERT INTO `sys_menu` VALUES ('1000', '百度一下', '3', '3', 'http://www.baidu.com', 'C', '0', 'tool:build:view', '', 'admin', '2018-05-30 17:56:02', 'admin', '2018-06-11 13:52:03', '', '0');
+INSERT INTO `sys_menu` VALUES ('1001', '主页', '0', '0', '#', 'M', '0', '', 'fa fa-home', 'admin', '2018-06-05 14:03:02', 'admin', '2018-06-15 11:47:05', '', '0');
+INSERT INTO `sys_menu` VALUES ('1004', '了解我们', '1001', '1', '/system/main', 'C', '0', 'system:main:view', '', 'admin', '2018-06-05 15:20:26', 'admin', '2018-06-15 16:35:40', '', '0');
 
 -- ----------------------------
 -- Table structure for sys_oper_log
@@ -714,7 +725,7 @@ CREATE TABLE `sys_oper_log` (
   `error_msg` varchar(2000) DEFAULT '' COMMENT '错误消息',
   `oper_time` datetime DEFAULT NULL COMMENT '操作时间',
   PRIMARY KEY (`oper_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=439 DEFAULT CHARSET=utf8 COMMENT='操作日志记录';
+) ENGINE=InnoDB AUTO_INCREMENT=491 DEFAULT CHARSET=utf8 COMMENT='操作日志记录';
 
 -- ----------------------------
 -- Records of sys_oper_log
@@ -1058,6 +1069,58 @@ INSERT INTO `sys_oper_log` VALUES ('435', '系统管理', '菜单管理-修改�
 INSERT INTO `sys_oper_log` VALUES ('436', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/5', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-11 15:33:08');
 INSERT INTO `sys_oper_log` VALUES ('437', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/7', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-11 15:33:12');
 INSERT INTO `sys_oper_log` VALUES ('438', '系统管理', '菜单管理-新增菜单', 'com.ruoyi.project.system.menu.controller.MenuController.add()', 'web', 'admin', '研发一部', '/system/menu/add/1001', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-11 15:33:26');
+INSERT INTO `sys_oper_log` VALUES ('439', '系统管理', '部门管理-修改部门', 'com.ruoyi.project.system.dept.controller.DeptController.edit()', 'web', 'admin', '研发一部', '/system/dept/edit/101', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-11 16:19:17');
+INSERT INTO `sys_oper_log` VALUES ('440', '系统管理', '个人信息-修改头像', 'com.ruoyi.project.system.user.controller.ProfileController.avatar()', 'web', 'admin', '研发一部', '/system/user/profile/avatar/1', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-11 17:27:32');
+INSERT INTO `sys_oper_log` VALUES ('441', '系统管理', '个人信息-保存头像', 'com.ruoyi.project.system.user.controller.ProfileController.updateAvatar()', 'web', 'admin', '研发一部', '/system/user/profile/updateAvatar', '127.0.0.1', 'XXXX内网IP', '{\"userId\":[\"1\"]}', '0', null, '2018-06-11 17:27:51');
+INSERT INTO `sys_oper_log` VALUES ('442', '系统管理', '个人信息-保存头像', 'com.ruoyi.project.system.user.controller.ProfileController.updateAvatar()', 'web', 'admin', '研发一部', '/system/user/profile/updateAvatar', '127.0.0.1', 'XXXX内网IP', '{\"userId\":[\"1\"]}', '0', null, '2018-06-11 17:27:54');
+INSERT INTO `sys_oper_log` VALUES ('443', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/7', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-12 14:39:49');
+INSERT INTO `sys_oper_log` VALUES ('444', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/6', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-12 14:39:59');
+INSERT INTO `sys_oper_log` VALUES ('445', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/5', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-12 14:40:07');
+INSERT INTO `sys_oper_log` VALUES ('446', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/4', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-12 14:40:12');
+INSERT INTO `sys_oper_log` VALUES ('447', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/3', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-12 14:40:16');
+INSERT INTO `sys_oper_log` VALUES ('448', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/2', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-12 14:40:20');
+INSERT INTO `sys_oper_log` VALUES ('449', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/1', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-12 14:40:23');
+INSERT INTO `sys_oper_log` VALUES ('450', '系统管理', '字典管理-修改字典数据', 'com.ruoyi.project.system.dict.controller.DictDataController.edit()', 'web', 'admin', '研发一部', '/system/dict/data/edit/3', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-12 14:40:27');
+INSERT INTO `sys_oper_log` VALUES ('451', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/8', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-12 14:40:39');
+INSERT INTO `sys_oper_log` VALUES ('452', '系统管理', '字典管理-修改字典数据', 'com.ruoyi.project.system.dict.controller.DictDataController.edit()', 'web', 'admin', '研发一部', '/system/dict/data/edit/18', '127.0.0.1', null, '{}', '0', null, '2018-06-12 14:40:43');
+INSERT INTO `sys_oper_log` VALUES ('453', '系统管理', '字典管理-保存字典数据', 'com.ruoyi.project.system.dict.controller.DictDataController.save()', 'web', 'admin', '研发一部', '/system/dict/data/save', '127.0.0.1', 'XXXX内网IP', '{\"dictCode\":[\"18\"],\"dictLabel\":[\"新窗口\"],\"dictValue\":[\"_blank\"],\"cssClass\":[\"radio radio-warning radio-inline\"],\"isDefault\":[\"N\"],\"dictSort\":[\"2\"],\"status\":[\"0\"],\"remark\":[\"\"]}', '0', null, '2018-06-12 14:40:49');
+INSERT INTO `sys_oper_log` VALUES ('454', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/8', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-12 14:40:50');
+INSERT INTO `sys_oper_log` VALUES ('455', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/4', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-12 14:41:04');
+INSERT INTO `sys_oper_log` VALUES ('456', '系统管理', '字典管理-修改字典类型', 'com.ruoyi.project.system.dict.controller.DictTypeController.edit()', 'web', 'admin', '研发一部', '/system/dict/edit/1', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 11:45:49');
+INSERT INTO `sys_oper_log` VALUES ('457', '系统管理', '岗位管理-修改岗位', 'com.ruoyi.project.system.post.controller.PostController.edit()', 'web', 'admin', '研发一部', '/system/post/edit/1', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 11:45:56');
+INSERT INTO `sys_oper_log` VALUES ('458', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/1001', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 11:46:01');
+INSERT INTO `sys_oper_log` VALUES ('459', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/1001', '127.0.0.1', null, '{}', '0', null, '2018-06-15 11:46:27');
+INSERT INTO `sys_oper_log` VALUES ('460', '系统管理', '菜单管理-保存菜单', 'com.ruoyi.project.system.menu.controller.MenuController.save()', 'web', 'admin', '研发一部', '/system/menu/save', '127.0.0.1', 'XXXX内网IP', '{\"menuId\":[\"1001\"],\"parentId\":[\"0\"],\"menuType\":[\"M\"],\"menuName\":[\"主页\"],\"url\":[\"#\"],\"perms\":[\"\"],\"orderNum\":[\"0\"],\"icon\":[\"fa fa-home\"],\"visible\":[\"0\"],\"openMode\":[\"_blank\"]}', '0', null, '2018-06-15 11:46:32');
+INSERT INTO `sys_oper_log` VALUES ('461', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/1004', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 11:46:58');
+INSERT INTO `sys_oper_log` VALUES ('462', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/1001', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 11:47:02');
+INSERT INTO `sys_oper_log` VALUES ('463', '系统管理', '菜单管理-保存菜单', 'com.ruoyi.project.system.menu.controller.MenuController.save()', 'web', 'admin', '研发一部', '/system/menu/save', '127.0.0.1', 'XXXX内网IP', '{\"menuId\":[\"1001\"],\"parentId\":[\"0\"],\"menuType\":[\"M\"],\"menuName\":[\"主页\"],\"url\":[\"#\"],\"perms\":[\"\"],\"orderNum\":[\"0\"],\"icon\":[\"fa fa-home\"],\"visible\":[\"0\"],\"openMode\":[\"_parent\"]}', '0', null, '2018-06-15 11:47:05');
+INSERT INTO `sys_oper_log` VALUES ('464', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/8', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 15:23:07');
+INSERT INTO `sys_oper_log` VALUES ('465', '系统管理', '字典管理-修改字典数据', 'com.ruoyi.project.system.dict.controller.DictDataController.edit()', 'web', 'admin', '研发一部', '/system/dict/data/edit/17', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 15:23:22');
+INSERT INTO `sys_oper_log` VALUES ('466', '系统管理', '字典管理-保存字典数据', 'com.ruoyi.project.system.dict.controller.DictDataController.save()', 'web', 'admin', '研发一部', '/system/dict/data/save', '127.0.0.1', 'XXXX内网IP', '{\"dictCode\":[\"17\"],\"dictLabel\":[\"本窗口\"],\"dictValue\":[\"0\"],\"cssClass\":[\"radio radio-info radio-inline\"],\"isDefault\":[\"Y\"],\"dictSort\":[\"1\"],\"status\":[\"0\"],\"remark\":[\"\"]}', '0', null, '2018-06-15 15:24:00');
+INSERT INTO `sys_oper_log` VALUES ('467', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/8', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 15:24:01');
+INSERT INTO `sys_oper_log` VALUES ('468', '系统管理', '字典管理-修改字典数据', 'com.ruoyi.project.system.dict.controller.DictDataController.edit()', 'web', 'admin', '研发一部', '/system/dict/data/edit/18', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 15:24:03');
+INSERT INTO `sys_oper_log` VALUES ('469', '系统管理', '字典管理-保存字典数据', 'com.ruoyi.project.system.dict.controller.DictDataController.save()', 'web', 'admin', '研发一部', '/system/dict/data/save', '127.0.0.1', 'XXXX内网IP', '{\"dictCode\":[\"18\"],\"dictLabel\":[\"新窗口\"],\"dictValue\":[\"2\"],\"cssClass\":[\"radio radio-warning radio-inline\"],\"isDefault\":[\"N\"],\"dictSort\":[\"2\"],\"status\":[\"0\"],\"remark\":[\"\"]}', '0', null, '2018-06-15 15:24:11');
+INSERT INTO `sys_oper_log` VALUES ('470', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/8', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 15:24:11');
+INSERT INTO `sys_oper_log` VALUES ('471', '系统管理', '字典管理-修改字典数据', 'com.ruoyi.project.system.dict.controller.DictDataController.edit()', 'web', 'admin', '研发一部', '/system/dict/data/edit/18', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 15:24:14');
+INSERT INTO `sys_oper_log` VALUES ('472', '系统管理', '字典管理-保存字典数据', 'com.ruoyi.project.system.dict.controller.DictDataController.save()', 'web', 'admin', '研发一部', '/system/dict/data/save', '127.0.0.1', 'XXXX内网IP', '{\"dictCode\":[\"18\"],\"dictLabel\":[\"新窗口\"],\"dictValue\":[\"1\"],\"cssClass\":[\"radio radio-warning radio-inline\"],\"isDefault\":[\"N\"],\"dictSort\":[\"2\"],\"status\":[\"0\"],\"remark\":[\"\"]}', '0', null, '2018-06-15 15:24:17');
+INSERT INTO `sys_oper_log` VALUES ('473', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/8', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 15:24:19');
+INSERT INTO `sys_oper_log` VALUES ('474', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/8', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 15:57:12');
+INSERT INTO `sys_oper_log` VALUES ('475', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/1004', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 16:35:36');
+INSERT INTO `sys_oper_log` VALUES ('476', '系统管理', '菜单管理-保存菜单', 'com.ruoyi.project.system.menu.controller.MenuController.save()', 'web', 'admin', '研发一部', '/system/menu/save', '127.0.0.1', 'XXXX内网IP', '{\"menuId\":[\"1004\"],\"parentId\":[\"1001\"],\"menuType\":[\"C\"],\"menuName\":[\"了解我们\"],\"url\":[\"/system/main\"],\"perms\":[\"system:main:view\"],\"orderNum\":[\"1\"],\"icon\":[\"\"],\"visible\":[\"0\"],\"openMode\":[\"0\"]}', '0', null, '2018-06-15 16:35:41');
+INSERT INTO `sys_oper_log` VALUES ('477', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/1004', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 16:35:50');
+INSERT INTO `sys_oper_log` VALUES ('478', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/4', '127.0.0.1', null, '{}', '0', null, '2018-06-15 16:36:21');
+INSERT INTO `sys_oper_log` VALUES ('479', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/5', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 16:36:56');
+INSERT INTO `sys_oper_log` VALUES ('480', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/6', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 16:37:09');
+INSERT INTO `sys_oper_log` VALUES ('481', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/1', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 16:37:18');
+INSERT INTO `sys_oper_log` VALUES ('482', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/4', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 16:37:29');
+INSERT INTO `sys_oper_log` VALUES ('483', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/5', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 16:37:41');
+INSERT INTO `sys_oper_log` VALUES ('484', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/4', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 16:37:48');
+INSERT INTO `sys_oper_log` VALUES ('485', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/4', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 16:52:17');
+INSERT INTO `sys_oper_log` VALUES ('486', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/1', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 16:52:48');
+INSERT INTO `sys_oper_log` VALUES ('487', '系统管理', '菜单管理-修改菜单', 'com.ruoyi.project.system.menu.controller.MenuController.edit()', 'web', 'admin', '研发一部', '/system/menu/edit/10', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-15 16:52:57');
+INSERT INTO `sys_oper_log` VALUES ('488', '系统管理', '字典管理-查询字典数据', 'com.ruoyi.project.system.dict.controller.DictTypeController.detail()', 'web', 'admin', '研发一部', '/system/dict/detail/8', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-19 09:40:01');
+INSERT INTO `sys_oper_log` VALUES ('489', '系统管理', '字典管理-修改字典数据', 'com.ruoyi.project.system.dict.controller.DictDataController.edit()', 'web', 'admin', '研发一部', '/system/dict/data/edit/17', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-19 09:40:11');
+INSERT INTO `sys_oper_log` VALUES ('490', '系统管理', '字典管理-修改字典数据', 'com.ruoyi.project.system.dict.controller.DictDataController.edit()', 'web', 'admin', '研发一部', '/system/dict/data/edit/18', '127.0.0.1', 'XXXX内网IP', '{}', '0', null, '2018-06-19 09:40:37');
 
 -- ----------------------------
 -- Table structure for sys_post
@@ -1230,7 +1293,7 @@ CREATE TABLE `sys_user` (
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
-INSERT INTO `sys_user` VALUES ('1', '106', 'admin', '那谁', '1888@163.com', '15888888889', '0', '', '8f02c9f5377c332a359cdf2b3701b2e4', 'de88b6', '0', '127.0.0.1', '2018-06-11 15:29:36', 'admin', '2018-03-16 11:33:00', 'ry', '2018-06-11 15:29:36', '管理员');
+INSERT INTO `sys_user` VALUES ('1', '106', 'admin', '那谁', '1888@163.com', '15888888889', '0', '', '8f02c9f5377c332a359cdf2b3701b2e4', 'de88b6', '0', '127.0.0.1', '2018-06-22 15:10:49', 'admin', '2018-03-16 11:33:00', 'ry', '2018-06-22 15:10:48', '管理员');
 INSERT INTO `sys_user` VALUES ('2', '108', 'ry', '许', 'ry@qq.com', '15666666666', '0', '', '8e6d98b90472783cc73c17047ddccf36', '222222', '0', '127.0.0.1', '2018-06-04 16:29:33', 'admin', '2018-03-16 11:33:00', 'admin', '2018-06-04 16:30:54', '测试员');
 
 -- ----------------------------
@@ -1255,7 +1318,7 @@ CREATE TABLE `sys_user_online` (
 -- ----------------------------
 -- Records of sys_user_online
 -- ----------------------------
-INSERT INTO `sys_user_online` VALUES ('81a2e768-2956-4ceb-bc73-51fcf2ac2f34', 'admin', '研发一部', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', 'on_line', '2018-06-11 15:29:34', '2018-06-11 15:32:56', '1800000');
+INSERT INTO `sys_user_online` VALUES ('072fd64f-da9e-4f10-80af-64514f938f56', 'admin', '研发一部', '127.0.0.1', 'XXXX内网IP', 'Chrome', 'Windows 7', 'on_line', '2018-06-22 15:10:45', '2018-06-22 15:10:49', '1800000');
 
 -- ----------------------------
 -- Table structure for sys_user_post

@@ -190,8 +190,12 @@ $(function() {
     function menuItem() {
         // 获取标识数据
         var dataUrl = $(this).attr('href'),
-        openMode = $(this).attr('target'),
-        dataIndex = $(this).data('index'),
+        openMode = $(this).attr('target');
+            if(openMode=="1"){
+            window.open(dataUrl, '_blank');
+            return;
+            }
+        var dataIndex = $(this).data('index'),
         menuName = $.trim($(this).text()),
         flag = true;
         if (dataUrl == undefined || $.trim(dataUrl).length == 0) return false;
@@ -216,9 +220,6 @@ $(function() {
         });
         // 选项卡菜单不存在
         if (flag) {
-            if(openMode=="_blank"){
-                window.open(dataUrl, '_blank');
-            }else{
             var str = '<a href="javascript:;" class="active menuTab" data-id="' + dataUrl + '">' + menuName + ' <i class="fa fa-times-circle"></i></a>';
             $('.menuTab').removeClass('active');
 
@@ -229,7 +230,6 @@ $(function() {
             // 添加选项卡
             $('.menuTabs .page-tabs-content').append(str);
             scrollToTab($('.menuTab.active'));
-            }
         }
         return false;
     }

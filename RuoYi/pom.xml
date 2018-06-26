@@ -49,8 +49,8 @@
 			<!--
 			 <exclusions>
                 <exclusion>
+                	<groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-starter-tomcat</artifactId>
-                    <groupId>org.springframework.boot</groupId>
                 </exclusion>
             </exclusions> 
              -->
@@ -80,13 +80,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
+
+
 		<!-- SpringBoot集成thymeleaf模板 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
-		
+
 		<!-- thymeleaf网页解析 -->
 		<dependency>
 			<groupId>net.sourceforge.nekohtml</groupId>

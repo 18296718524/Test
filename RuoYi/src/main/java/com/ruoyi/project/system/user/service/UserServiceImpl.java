@@ -48,9 +48,9 @@ public class UserServiceImpl implements IUserService
 
     /**
      * 根据条件分页查询用户对象
-     * 
+     *
      * @param user 用户信息
-     * 
+     *
      * @return 用户信息集合信息
      */
     @Override
@@ -61,7 +61,7 @@ public class UserServiceImpl implements IUserService
 
     /**
      * 通过用户名查询用户
-     * 
+     *
      * @param userName 用户名
      * @return 用户对象信息
      */
@@ -73,7 +73,7 @@ public class UserServiceImpl implements IUserService
 
     /**
      * 通过手机号码查询用户
-     * 
+     *
      * @param userName 用户名
      * @return 用户对象信息
      */
@@ -85,7 +85,7 @@ public class UserServiceImpl implements IUserService
 
     /**
      * 通过邮箱查询用户
-     * 
+     *
      * @param email 邮箱
      * @return 用户对象信息
      */
@@ -97,7 +97,7 @@ public class UserServiceImpl implements IUserService
 
     /**
      * 通过用户ID查询用户
-     * 
+     *
      * @param userId 用户ID
      * @return 用户对象信息
      */
@@ -109,7 +109,7 @@ public class UserServiceImpl implements IUserService
 
     /**
      * 通过用户ID删除用户
-     * 
+     *
      * @param userId 用户ID
      * @return 结果
      */
@@ -125,7 +125,7 @@ public class UserServiceImpl implements IUserService
 
     /**
      * 批量删除用户信息
-     * 
+     *
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -139,7 +139,7 @@ public class UserServiceImpl implements IUserService
 
     /**
      * 保存用户信息
-     * 
+     *
      * @param user 用户信息
      * @return 结果
      */
@@ -180,7 +180,7 @@ public class UserServiceImpl implements IUserService
 
     /**
      * 修改用户信息
-     * 
+     *
      * @param user 用户信息
      * @return 结果
      */
@@ -192,7 +192,7 @@ public class UserServiceImpl implements IUserService
 
     /**
      * 修改用户密码
-     * 
+     *
      * @param user 用户信息
      * @return 结果
      */
@@ -250,7 +250,7 @@ public class UserServiceImpl implements IUserService
 
     /**
      * 校验用户名称是否唯一
-     * 
+     *
      * @param loginName 用户名
      * @return
      */
@@ -313,7 +313,7 @@ public class UserServiceImpl implements IUserService
 
     /**
      * 查询用户所属角色组
-     * 
+     *
      * @param userId 用户ID
      * @return 结果
      */
@@ -335,7 +335,7 @@ public class UserServiceImpl implements IUserService
 
     /**
      * 查询用户所属岗位组
-     * 
+     *
      * @param userId 用户ID
      * @return 结果
      */

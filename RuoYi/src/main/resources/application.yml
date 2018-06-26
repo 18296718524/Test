@@ -41,7 +41,12 @@ spring:
       max-request-size: 30Mb
   devtools:
     restart:
-      enabled: true    
+      enabled: true
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
 # MyBatis
 mybatis:
     # 搜索指定包别名
